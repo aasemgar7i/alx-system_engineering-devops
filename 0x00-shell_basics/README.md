@@ -5,3 +5,4 @@
 (4)"echo "$(ls -la)" Display the content of current directory in long format with hidden files too
 (5)"echo "$(ls -lan)" Display the content of current directory in long format with hidden files and with user and group IDs
 (6)"echo "$(mkdir /tmp/my_first_directory)" Make directory in /tmp
+(7)"mv /tmp/betty /tmp/my_first_directory" Move "betty" file from /tmp/ directory to my_first_directory directory at /tmp/
