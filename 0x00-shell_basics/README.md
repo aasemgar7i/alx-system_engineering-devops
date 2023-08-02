@@ -11,3 +11,4 @@
 (10)"cd -" This command back to last directory were in
 (11)"ls -la .. . /boot" List all file in current directory and in parent of working one and in /boot directory
 (12)"file /tmp/iamafile" It show the file type of file "iamafile" at /tmp
+(13)"ln -s /bin/ls __ls__" Make a shortcut to /bin/ls by making symbolic link named __ls__
