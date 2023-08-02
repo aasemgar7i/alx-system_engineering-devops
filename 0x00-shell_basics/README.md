@@ -13,4 +13,5 @@
 (12)"file /tmp/iamafile" It show the file type of file "iamafile" at /tmp
 (13)"ln -s /bin/ls __ls__" Make a shortcut to /bin/ls by making symbolic link named __ls__
 (14)"cp -u *.html ../" Copy all new html file in current directory to parent directory
-(15)"mv *[A-Z]* /tmp/u" Move Files starting with uppercase to /tmp/u directory
+(15)"mv [[:upper:]]* /tmp/u" Move Files starting with uppercase to /tmp/u directory
+(16)"rm -f *~" Delete cash file of Emacs
