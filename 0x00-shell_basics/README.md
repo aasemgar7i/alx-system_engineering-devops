@@ -3,3 +3,4 @@
 (2)"cd ~" changes the working directory to /root with command source ./file-name.
 (3)"echo "$(ls -l)" Display the content of current directory in long format
 (4)"echo "$(ls -la)" Display the content of current directory in long format with hidden files too
+(5)"echo "$(ls -lan)" Display the content of current directory in long format with hidden files and with user and group IDs
