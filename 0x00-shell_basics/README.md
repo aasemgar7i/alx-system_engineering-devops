@@ -10,3 +10,4 @@
 (9)"rm -r /tmp/my_first_directory" Remove "my_first_directory" directory from /tmp
 (10)"cd -" This command back to last directory were in
 (11)"ls -la .. . /boot" List all file in current directory and in parent of working one and in /boot directory
+(12)"file /tmp/iamafile" It show the file type of file "iamafile" at /tmp
