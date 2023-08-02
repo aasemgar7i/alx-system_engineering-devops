@@ -1,0 +1,1 @@
+pwd is print th path name of the current directory
