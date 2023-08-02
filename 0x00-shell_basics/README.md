@@ -9,3 +9,4 @@
 (8)"rm /tmp/my_first_directory/betty" Remove file "betty" from "my_first_directory" at /tmp
 (9)"rm -r /tmp/my_first_directory" Remove "my_first_directory" directory from /tmp
 (10)"cd -" This command back to last directory were in
+(11)"ls -la .. . /boot" List all file in current directory and in parent of working one and in /boot directory
