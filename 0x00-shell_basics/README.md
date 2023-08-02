@@ -15,4 +15,5 @@
 (14)"cp -u *.html ../" Copy all new html file in current directory to parent directory
 (15)"mv [[:upper:]]* /tmp/u" Move Files starting with uppercase to /tmp/u directory
 (16)"rm -f *~" Delete cash file of Emacs
-(17)"mkdir -p welcome/ to/ school/" Make directory with -p recursively
+(17)"mkdir -p welcome/to/school/" Make directory with -p recursively
+(18)"ls -vamp" Nice tool 
