@@ -8,3 +8,4 @@ ________________Shell Permission___________
 (6)"chmod u+x,g+x,o+r hello" adds execute permission to the owner and the group owner, and read permission to other users
 (7)"chmod a+x hello" adds execution permission to the owner, the group owner and the other users, to the file hello
 (8)"chmod 007 hello" Make permissin for other users only
+(9)"chmod 753 hello" Give Read Write Execute permission to Owner and Read Execute to Group and Write Execute to Others
