@@ -3,3 +3,5 @@ ________________Shell Permission___________
 (1)"whosmi" Show the current user
 (2)"groups" show groupe for current user
 (3)"chown betty hello" Change the owner of the file hello to user betty
+(4)"touch hello" Create the file hello
+(5)"chmod u+x hello" add execute premission to file hello
