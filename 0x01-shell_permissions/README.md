@@ -5,3 +5,4 @@ ________________Shell Permission___________
 (3)"chown betty hello" Change the owner of the file hello to user betty
 (4)"touch hello" Create the file hello
 (5)"chmod u+x hello" add execute premission to file hello
+(6)"chmod u+x,g+x,o+x" adds execute permission to the owner and the group owner, and read permission to other users
