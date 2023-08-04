@@ -9,3 +9,6 @@ ________________Shell Permission___________
 (7)"chmod a+x hello" adds execution permission to the owner, the group owner and the other users, to the file hello
 (8)"chmod 007 hello" Make permissin for other users only
 (9)"chmod 753 hello" Give Read Write Execute permission to Owner and Read Execute to Group and Write Execute to Others
+(10)"chmod 664" adds execute permission to all subdirectories of the current directory
+(11)"mkdir -m 751 my_dir"creates a directory called my_dir with permissions 751
+(12
