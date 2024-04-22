@@ -4,6 +4,7 @@ import requests
 import sys
 import json
 
+
 def fetch_employee_todo_progress(employee_id):
     base_url = "https://jsonplaceholder.typicode.com/users"
     todo_url = f"{base_url}/{employee_id}/todos"
@@ -37,6 +38,7 @@ def fetch_employee_todo_progress(employee_id):
         json.dump(json_data, file)
 
     print(f"Data exported to {filename}")
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:

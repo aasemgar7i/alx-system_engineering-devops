@@ -3,6 +3,7 @@
 import requests
 import json
 
+
 def fetch_all_employees_todo():
     base_url = "https://jsonplaceholder.typicode.com/users"
 
@@ -40,6 +41,7 @@ def fetch_all_employees_todo():
         json.dump(json_data, file)
 
     print(f"Data exported to {filename}")
+
 
 if __name__ == "__main__":
     fetch_all_employees_todo()

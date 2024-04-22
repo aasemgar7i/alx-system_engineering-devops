@@ -4,6 +4,7 @@ import requests
 import sys
 import csv
 
+
 def fetch_employee_todo_progress(employee_id):
     base_url = "https://jsonplaceholder.typicode.com/users"
     todo_url = f"{base_url}/{employee_id}/todos"
@@ -21,13 +22,14 @@ def fetch_employee_todo_progress(employee_id):
     # Writing data to CSV file
     filename = f"{user_id}.csv"
     with open(filename, mode='w', newline='') as file:
-        writer = csv.writer(file)
-#        writer.writerow(["USER_ID", "USERNAME", "TASK_COMPLETED_STATUS", "TASK_TITLE"])
+        writer = csv.writer(file, quoting=csv.QUOTE_ALL)
         for task in todo_list:
             task_completed_status = "True" if task["completed"] else "False"
-            writer.writerow([user_id, username, task_completed_status, task["title"]])
+            writer.writerow([user_id, username,
+                             task_completed_status, task["title"]])
 
     print(f"Data exported to {filename}")
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
