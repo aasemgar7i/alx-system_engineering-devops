@@ -28,7 +28,7 @@ def fetch_employee_todo_progress(employee_id):
     # Displaying completed tasks
     for task in todo_list:
         if task["completed"]:
-            print(f"\t {task['title']}\n")
+            print(f"\t {task['title']}")
 
 
 if __name__ == "__main__":
