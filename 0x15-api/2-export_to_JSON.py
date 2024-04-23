@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """ Fetching data into Json file. """
+import json
 import requests
 import sys
-import json
 
 
 def fetch_employee_todo_progress(employee_id):
@@ -25,7 +25,7 @@ def fetch_employee_todo_progress(employee_id):
     }
 
     for task in todo_list:
-        task_completed_status = "true" if task["completed"] else "false"
+        task_completed_status = task["completed"]
         json_data[str(user_id)].append({
             "task": task["title"],
             "completed": task_completed_status,
