@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """ Fetching data into CSV file. """
+import csv
 import requests
 import sys
-import csv
 
 
 def fetch_employee_todo_progress(employee_id):
