@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ list of Dict"""
-import requests
 import json
+import requests
 
 
 def fetch_all_employees_todo():
@@ -40,7 +40,7 @@ def fetch_all_employees_todo():
     with open(filename, "w") as file:
         json.dump(json_data, file)
 
-    print(f"Data exported to {filename}")
+#    print(f"Data exported to {filename}")
 
 
 if __name__ == "__main__":
