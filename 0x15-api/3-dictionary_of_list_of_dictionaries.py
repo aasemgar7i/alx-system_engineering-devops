@@ -26,7 +26,7 @@ def fetch_all_employees_todo():
         # Constructing JSON data for the current employee
         employee_tasks = []
         for task in todo_list:
-            task_completed_status = "true" if task["completed"] else "false"
+            task_completed_status = task["completed"]
             employee_tasks.append({
                 "username": username,
                 "task": task["title"],
