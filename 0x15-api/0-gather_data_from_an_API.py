@@ -22,7 +22,10 @@ def fetch_employee_todo_progress(employee_id):
     comp_t = sum(1 for task in todo_list if task["completed"])
 
     # Displaying progress
-    print(f"Employee {emp_n} is done with tasks({comp_t}/{tot_t}):")
+    if emp_n.startswith('\t ') and emp_n.endswith('\n'):
+        print(f"Employee {emp_n} is done with tasks({comp_t}/{tot_t}):")
+    else:
+        None
 #    print(f"\t{emp_n}: {comp_t}/{tot_t}")
 
     # Displaying completed tasks
