@@ -23,7 +23,7 @@ def fetch_employee_todo_progress(employee_id):
 
     # Displaying progress
     print(f"Employee {emp_n} is done with tasks ({comp_t}/{tot_t}):")
-    print(f"\t{emp_n}: {comp_t}/{tot_t}")
+#    print(f"\t{emp_n}: {comp_t}/{tot_t}")
 
     # Displaying completed tasks
     for task in todo_list:
