@@ -11,20 +11,21 @@ def number_of_subscribers(subreddit):
         subreddit (str): The name of the subreddit to query.
 
     Returns:
-        int: The total number of subscribers of the subreddit. Returns 0 if the subreddit is invalid or does not exist.
+        int: The total number of subscribers of the subreddit.
+         Returns 0 if the subreddit is invalid or does not exist.
     """
     # Construct the URL for the subreddit's about page
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
 
-    # Define custom User-Agent header to avoid potential issues with Reddit's API guidelines
+    # Define custom User-Agent header to avoid issues with Reddit's API
     headers = {
         "User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)"
     }
 
-    # Send GET request to the subreddit's about page, prevent following redirects
+    # Send GET request to the subreddit's, prevent following redirects
     response = requests.get(url, headers=headers, allow_redirects=False)
 
-    # Check if the response status code is 200 (OK), indicating a successful request
+    # Check indicating a successful request
     if response.status_code == 200:
         # Parse the JSON response and extract the number of subscribers
         data = response.json().get("data")
