@@ -19,7 +19,7 @@ def number_of_subscribers(subreddit):
 
     # Define custom User-Agent header to avoid issues with Reddit's API
     headers = {
-        "User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)"
+        "User-Agent": "Chrome/58.0.3029.110"
     }
 
     # Send GET request to the subreddit's, prevent following redirects
